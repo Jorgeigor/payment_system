@@ -5,6 +5,7 @@ import jakarta.validation.constraints.Email;
 import lombok.Data;
 import org.hibernate.validator.constraints.Length;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
 @Data
@@ -25,9 +26,9 @@ public class ClientEntity {
     @Length(min = 8, max = 12)
     private String password;
 
+    private BigDecimal balance = BigDecimal.ZERO;
+
     @Enumerated(EnumType.STRING)
     private CustomerType customerType;
 
-    @Enumerated(EnumType.STRING)
-    private CustomerType customerCode;
 }
