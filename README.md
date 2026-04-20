@@ -18,7 +18,8 @@ A robust RESTful API built to handle digital wallet operations and money transfe
 - **Language:** [Java 17+](https://www.java.com/)
 - **Framework:** [Spring Boot 3](https://spring.io/projects/spring-boot)
 - **Data Access:** Spring Data JPA / Hibernate
-- **Database:** PostgreSQL (or H2 for local testing)
+- **Database:** [PostgreSQL](https://www.postgresql.org/)
+- **Containerization:** [Docker](https://www.docker.com/) & Docker Compose
 - **API Communication:** `RestTemplate` for external service consumption
 - **Data Transfer:** Java Records for concise and immutable DTOs
 - **Build Tool:** Maven
